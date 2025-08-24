@@ -57,9 +57,9 @@ class ProcessController(BaseController):
             rec.metadata
             for rec in file_content
         ]
-        chuncks = text_splitter.create_documents(
+        chunks = text_splitter.create_documents(
             file_content_text,
             metadatas=file_content_metadata
         )
 
-        return chuncks
+        return chunks
