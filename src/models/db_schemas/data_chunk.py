@@ -17,3 +17,15 @@ class DataChunk(BaseModel):
     chunk_metadata: dict
     chunk_order: int = Field(..., gt=0)
     chunk_project_id: PyObjectId
+
+    @classmethod
+    def get_indexes(cls):
+        return [
+            {
+                "key": [
+                    ("chunk_project_id", 1)  # 1 is for ascending
+                ],
+                "name": "chunk_project_id_index_1",
+                "unique": False
+            }
+        ]
