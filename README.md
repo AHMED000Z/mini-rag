@@ -169,4 +169,3 @@ This project follows a clean architecture pattern with:
 ## Credits
 
 This project is inspired by and follows tutorials from **Abu Bakr Soliman** ([YouTube Channel](https://www.youtube.com/@bakrianoo)). Special thanks for the educational content that made this implementation possible.
-
